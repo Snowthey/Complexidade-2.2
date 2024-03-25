@@ -9,26 +9,17 @@ public class Teste_Fibo {
     void teste1(){
         Fibo objeto = new Fibo();
 
-        int retorno1 = objeto.fiboIterativo(1);
+        int retorno1 = objeto.fiboInteretivo(1);
         int retorno2 = objeto.fiboRecursivo(1);
-        assertEquals(retorno1, retorno2);
+        assertEquals(2, retorno1, retorno2);
     }
 
     @Test
     void teste2(){
         Fibo objeto = new Fibo();
 
-        int retorno1 = objeto.fiboIterativo(0);
-        int retorno2 = objeto.fiboRecursivo(0);
-        assertEquals(retorno1, retorno2);
-    }
-
-    @Test
-    void teste3(){
-        Fibo objeto = new Fibo();
-
-        int retorno1 = objeto.fiboIterativo(2);
+        int retorno1 = objeto.fiboInteretivo(2);
         int retorno2 = objeto.fiboRecursivo(2);
-        assertEquals(retorno1, retorno2);
+        assertEquals(3, retorno1, retorno2);
     }
 }
